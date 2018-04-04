@@ -1,0 +1,118 @@
+html, body {
+  background-color: #d5fbd8;
+  width: 100%;
+  //background-color: red;
+}
+
+ [data-id = 'table'] {
+  background-color: #ffffff;
+  border: 1px solid #989898;
+  border-collapse: collapse;
+  margin: 20px auto;
+  box-shadow: 4px 4px 10px 2px #bcdebf;
+   //outline: 5px solid #7ba47c;
+
+   [data-id = 'caption'] {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 20px auto;
+  }
+   .tableHeadData {
+    padding: 10px 30px 10px 10px;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #444444;
+    text-align: center;
+    line-height: 40px;
+    background-color: #444444;
+    color: #ffffff;
+    position: relative;
+
+    &:not(:last-child) {
+      border-right: 1px solid #989898;
+    }
+    .buttonSort {
+      padding: 0;
+      height: 24px;
+      width: 24px;
+      background-color: #444444;
+      border: none;
+      position: absolute;
+      right: 10px;
+      &.up {
+        top: 4px;
+      }
+      &.down {
+        top: 33px;
+      }
+      &:focus {
+        outline: none;
+        background-color: #cccccc;
+
+      }
+    }
+  }
+
+  .row:nth-child(odd) {
+    background-color: #c8c8c8;
+  }
+
+  .tableData {
+    border: 1px solid #989898;
+    line-height: 40px;
+    text-indent: 10px;
+  }
+}
+
+.closeBtn {
+  padding: 3px;
+  font-size: 14px;
+  display: inline;
+  position: absolute;
+  color: #444444;
+  background-color: #ffc7c8;
+
+  &:focus {
+    outline: none;
+    background-color: #ffa9a5;
+  }
+}
+
+.addForm {
+  margin: 20px auto;
+  box-sizing: border-box;
+  width: 70%;
+  #addInput {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  .addInputLabel {
+    text-align: center;
+    font-size: 17px;
+
+  }
+  #addButton {
+    margin: 5px 0;
+    width: 100px;
+    height: 30px;
+    background-color: #8ebe90;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #7ba47c;
+    box-shadow: 4px 4px 10px 2px #bcdebf;
+
+    &:focus {
+      outline: none;
+      background-color: #7ba47c;
+      box-shadow: inset 0 0 10px 5px #719772, 0 0 20px 7px #a9c7ab;
+
+    }
+  }
+}

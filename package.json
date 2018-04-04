@@ -1,0 +1,11 @@
+{
+  "name": "DZ6",
+  "version": "0.0.1",
+  "dependencies": {
+    "gulp-less": "^3.5.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "less": "^2.7.3"
+  }
+}
